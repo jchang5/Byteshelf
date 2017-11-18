@@ -106,7 +106,6 @@ header .hero {
   display:block;
   position: relative;
 }
-
 header .hero h1 {
   font-size:48px;
   font-weight:normal;
@@ -131,5 +130,30 @@ header .hero img {
   padding:10px 30px;
   background: #6724D0;
   border: 2px solid #6724D0;
-  /*box-shadow: 0px 2px 0px 0px #373736;*/
+  box-shadow: 1px 2px 3px 0px #333333;
+}
+@media screen and (max-width: 760px) {
+  .hero {
+    width: 96.5%;
+  }
+  .hero h1 {
+      font-size: 140%;
+  }
+  .hero p {
+      font-size: 140%;
+  }
+  .hero img {
+    float: none;
+    width: 100%;
+  }
+}
+@media screen (max-width: 992px) {
+  .hero {
+    width: 970px;
+  }
+}
+@media screen (max-width: 1200px) {
+  .hero {
+    width: 1170px;
+  }
 }
