@@ -374,8 +374,9 @@ header .hero img {
    background-color:#DADADA;
  }
  footer .site-logo {
-   padding: 2.35em 0;
-   margin: 0 auto;
+   padding: 0.35em 0;
+   margin: 0 20px;
+   float: right;
    display: block;
  }
  .copyright-block {
@@ -384,22 +385,25 @@ header .hero img {
  footer .container {
    float:center;
  }
- footer .container,.link-block {
+ footer .container,.link-block,.site-logo {
    display: inline-block;
  }
- /*@media (min-width: 992px){
+ @media (min-width: 992px){
    footer{
      background-color: #373738;
      height: 100px;
    }
    footer p, footer nav ul{
-     padding: 2em 0;
-     text-align: left;
+     padding: 0.5em 0;
+     text-align: center;
    }
    footer .right-footer-block {
      background-color: #DADADA;
    }
    footer .site-logo {
-     padding: 2em 0 2em 1.5em;
+     padding: 0.35em 0;
    }
- }*/
+   footer .container,.link-block,.site-logo {
+     display: inline-block;
+   }
+ }
