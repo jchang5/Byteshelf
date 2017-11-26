@@ -375,7 +375,7 @@ header .hero img {
    padding: 0.35em 0;
    margin: 0 20px;
    float: right;
-   display: block;
+   display: inline-block;
  }
  .copyright-block {
    float:left;
@@ -383,25 +383,96 @@ header .hero img {
  footer .container {
    float:center;
  }
- footer .container,.link-block,.site-logo {
+ footer .copyright-link,.link-block,.site-logo {
    display: inline-block;
  }
- @media (min-width: 992px){
+ @media (min-width: 320px){
    footer{
      background-color: #373738;
-     height: 100px;
    }
    footer p, footer nav ul{
      padding: 0.5em 0;
      text-align: center;
+     display: block;
+   }
+   footer .right-footer-block {
+     background-color: #DADADA;
+   }
+   footer .site-logo {
+     float:center;
+     text-align:center;
+     padding: 0 auto;
+     margin: 0;
+     width: 100%;
+   }
+   .copyright-block {
+     float:center;
+     text-align: center;
+     display: block;
+     padding:0;
+     width:100%;
+   }
+   footer .link-block {
+     display: block;
+     float: center;
+     text-align: center;
+     padding: 0;
+     margin: 0 auto;
+     width: 100%;
+   }
+ }
+ @media (min-width: 980px){
+   footer{
+     background-color: #373738;
+   }
+   footer p, footer nav ul{
+     padding: 0.5em 0;
+     text-align: center;
+     display: inline-block;
    }
    footer .right-footer-block {
      background-color: #DADADA;
    }
    footer .site-logo {
      padding: 0.35em 0;
+     display: inline-block;
    }
-   footer .container,.link-block,.site-logo {
+   .copyright-link {
+     display: inline-block;
+   }
+   footer .container,.copyright-link,.link-block,.site-logo {
      display: inline-block;
    }
  }
+ /* COLUMNS */
+ .column {
+    float: left;
+    width: 23%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+    width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        width: 45%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+   }
+}
