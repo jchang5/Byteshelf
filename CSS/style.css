@@ -192,6 +192,8 @@ header .hero img {
 .benefits h2 {
   color:#373738;
   text-align: center;
+  padding: 1em 0;
+  margin: 0;
 }
 /* TESTIMONIALS */
  .testimonials {
@@ -345,50 +347,52 @@ header .hero img {
   line-height: 15px;
   font-style:italic;
 }
+/*SIGN UP*/
+.sign-up {
+  padding: 0 0 2em 0;
+  text-align: center;
+}
 /* FOOTER */
- footer {
+ footer .container {
    background-color: #373738;
    color: #FFFFFF;
-   height: 150px;
+   height: 100px;
    position: relative;
    overflow: hidden;
+   width:100%;
    z-index: 0;
+   margin:0;
+   padding:0;
  }
  footer p, footer nav ul {
    font-size:14px;
    font-weight:100;
    text-align: center;
-   margin: 10px auto 0;
+   padding:1em;
  }
  footer nav ul li {
    list-style-type: none;
-   display: inline;
+   display:inline;
+   float: center;
  }
  footer nav ul li a {
    color:#FFFFFF;
    text-decoration: none;
  }
  footer .right-footer-block {
-   background-color:#DADADA;
+   background-color:#515151;
+   height: 100px;
+   float: right;
+   margin: 0;
  }
  footer .site-logo {
-   padding: 0.35em 0;
-   margin: 0 20px;
-   float: right;
-   display: inline-block;
- }
- .copyright-block {
-   float:left;
- }
- footer .container {
-   float:center;
- }
- footer .copyright-link,.link-block,.site-logo {
-   display: inline-block;
+   float: center;
+   padding:1.5em;
  }
  @media (min-width: 320px){
    footer{
      background-color: #373738;
+     height: 200px;
    }
    footer p, footer nav ul{
      padding: 0.5em 0;
@@ -397,6 +401,10 @@ header .hero img {
    }
    footer .right-footer-block {
      background-color: #DADADA;
+     width:100%;
+     padding:0;
+     margin:0;
+     position:relative;
    }
    footer .site-logo {
      float:center;
@@ -404,31 +412,29 @@ header .hero img {
      padding: 0 auto;
      margin: 0;
      width: 100%;
-   }
-   .copyright-block {
-     float:center;
-     text-align: center;
-     display: block;
-     padding:0;
-     width:100%;
+     position:relative;
    }
    footer .link-block {
-     display: block;
      float: center;
      text-align: center;
      padding: 0;
      margin: 0 auto;
      width: 100%;
    }
+   footer .one-third {
+     width:100%;
+   }
  }
  @media (min-width: 980px){
    footer{
      background-color: #373738;
+     margin: 0;
    }
    footer p, footer nav ul{
      padding: 0.5em 0;
      text-align: center;
      display: inline-block;
+     position: relative;
    }
    footer .right-footer-block {
      background-color: #DADADA;
@@ -436,15 +442,23 @@ header .hero img {
    footer .site-logo {
      padding: 0.35em 0;
      display: inline-block;
+     position: relative;
    }
    .copyright-link {
      display: inline-block;
+     position: relative;
    }
    footer .container,.copyright-link,.link-block,.site-logo {
      display: inline-block;
+     vertical-align: middle;
+     position:relative;
    }
  }
  /* COLUMNS */
+.images h1 {
+  margin: 20px 20px;
+  text-align: center;
+}
  .column {
     float: left;
     width: 23%;
