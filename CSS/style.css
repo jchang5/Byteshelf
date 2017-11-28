@@ -11,7 +11,6 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
   font-size:28px;
   font-weight: normal;
-  margin-bottom: 5px;
 }
 p {
   font-size:16px;
@@ -42,10 +41,18 @@ p {
   min-height: 1px;
   margin: 0 2% 20px;
 }
-
 @media (min-width: 768px) {
   .container {
     width: 750px;
+  }
+  .one-half {
+    width:46%;
+  }
+  .one-third {
+    width:29.333333%;
+  }
+  .one-fourth {
+    width:20%;
   }
 }
 @media (min-width: 992px) {
@@ -161,6 +168,16 @@ header .hero img {
 @media screen (max-width: 992px) {
   .hero {
     width: 970px;
+  }
+  .one-half {
+    text-align: center;
+    float: center;
+    margin: 0;
+  }
+  .one-half ul {
+    float: none;
+    margin: 0;
+    padding: 0;
   }
 }
 @media screen (max-width: 1200px) {
@@ -356,19 +373,20 @@ header .hero img {
  footer .container {
    background-color: #373738;
    color: #FFFFFF;
-   height: 100px;
    position: relative;
    overflow: hidden;
    width:100%;
    z-index: 0;
    margin:0;
-   padding:0;
+   padding: 10px;
  }
  footer p, footer nav ul {
    font-size:14px;
    font-weight:100;
    text-align: center;
-   padding:1em;
+   float: center;
+   padding:0;
+   margin:0;
  }
  footer nav ul li {
    list-style-type: none;
@@ -381,18 +399,19 @@ header .hero img {
  }
  footer .right-footer-block {
    background-color:#515151;
-   height: 100px;
+   height: 50px;
    float: right;
    margin: 0;
+   padding: 10px;
  }
  footer .site-logo {
    float: center;
-   padding:1.5em;
+   text-align: center;
+
  }
- @media (min-width: 320px){
+ @media (min-width: 760px){
    footer{
      background-color: #373738;
-     height: 200px;
    }
    footer p, footer nav ul{
      padding: 0.5em 0;
@@ -400,29 +419,20 @@ header .hero img {
      display: block;
    }
    footer .right-footer-block {
-     background-color: #DADADA;
-     width:100%;
+     background-color: #515151;
      padding:0;
-     margin:0;
-     position:relative;
    }
    footer .site-logo {
      float:center;
      text-align:center;
-     padding: 0 auto;
+     padding: 1em;
      margin: 0;
-     width: 100%;
-     position:relative;
    }
    footer .link-block {
      float: center;
      text-align: center;
      padding: 0;
      margin: 0 auto;
-     width: 100%;
-   }
-   footer .one-third {
-     width:100%;
    }
  }
  @media (min-width: 980px){
@@ -437,21 +447,12 @@ header .hero img {
      position: relative;
    }
    footer .right-footer-block {
-     background-color: #DADADA;
+     background-color: #515151;
    }
    footer .site-logo {
-     padding: 0.35em 0;
+     padding: 0.35em 0.5em;
      display: inline-block;
      position: relative;
-   }
-   .copyright-link {
-     display: inline-block;
-     position: relative;
-   }
-   footer .container,.copyright-link,.link-block,.site-logo {
-     display: inline-block;
-     vertical-align: middle;
-     position:relative;
    }
  }
  /* COLUMNS */
