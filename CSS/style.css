@@ -534,6 +534,18 @@ header .hero img {
     text-decoration: none;
     font-weight: 100;
   }
+  .left-nav .items ul li a:hover {
+    color:#6724D0;
+  }
+  /*.left-nav .items ul li a:active {
+    background-color:#373738;
+  }*/
+  .left-nav .items .all a{
+    background-color:#00D0DB;
+  }
+  /*.left-nav .items ul li a:visited {
+    color:#979797;*/
+  }
   .left-nav .items ul li a i {
     width:16px;
     text-align: center;
