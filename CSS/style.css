@@ -163,6 +163,7 @@ header .hero img {
   }
   .site-logo {
     float: center;
+    }
   }
 }
 @media screen (max-width: 992px) {
@@ -497,13 +498,44 @@ header .hero img {
    background: url('../images/101 background-02-02.png') right center repeat-y, #373738;
  }
  .left-nav {
-   height: 100vh;
-   width:14.66666667%;
-   color:#29292A;
-   background: #F8F8F8;
-   float:left;
-   position: fixed;
-   display:block;
+   height: 100%;
+   width: 280px;
+   color: #29292A;
+   position: absolute;
+   -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translate(-280px,0);
+  -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+  -o-transform: translate(-280px,0); /** Opera **/
+  -moz-transform: translate(-280px,0); /** Firefox **/
+ }
+ .left-nav.open {
+  display:block;
+  width:280px;
+  background: #F8F8F8;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translate(0,0);
+    -webkit-transform: translate(0,0); /** Chrome & Safari **/
+    -o-transform: translate(0,0); /** Opera **/
+    -moz-transform: translate(0,0); /** Firefox **/
+    z-index: 100;
+}
+.hamburger {
+   position:absolute;
+   z-index: 1000;
+   background:#6724D0;
+   color:#FFF;
+   text-decoration: none;
+   font-size: 22px;
+   padding: 10px 15px;
+   border-radius: 4px;
+   left: 5px;
+   top: 15px;
  }
  .left-nav .site-logo {
    padding:20px 0;
@@ -538,8 +570,8 @@ header .hero img {
     color:#6724D0;
   }
   /*.left-nav .items ul li a:active {
-    background-color:#373738;
-  }*/
+    background-color:#373738;*/
+  }
   .left-nav .items .all a{
     background-color:#00D0DB;
   }
@@ -653,7 +685,31 @@ header .hero img {
  }
  /* Laptops and Desktops */
  @media (min-width:992px) {
-   .content {
+   .left-nav {
+     height: 100vh;
+     width:14.66666667%;
+     color:#29292A;
+     background: #F8F8F8;
+     float:left;
+     position: fixed;
+     display:block;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .left-nav.open {
+     width:14.66666667%;
+     height:100vh;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .hamburger {
+     display:none;
+   }
+ .content {
      padding:1.5em 1%;
      float:right;
      width:83.33333333%;
