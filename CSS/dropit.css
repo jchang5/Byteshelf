@@ -60,10 +60,11 @@
  }
  .gear {
    width:500px;
+   margin-top:-40px;
  }
 .gear.dropit .dropit-submenu {
      position: absolute;
-     bottom: 100%;
+     top: -135px;
      right: 0; /* dropdown left or right */
      z-index: 1000;
      display: none;
@@ -81,6 +82,7 @@
   display: block;
   width: 0;
   z-index: 2;
-  top: -8px;
+  top: 115px;
+  transform:rotate(180deg);
   right: 10px;
  }
