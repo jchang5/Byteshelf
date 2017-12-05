@@ -495,7 +495,7 @@ header .hero img {
 /* DASHBOARD */
 .dashboard {
    background:#373738;
-   background: url('../images/101 background-02-02.png') right center repeat-y, #373738;
+   background: url('../images/101 background-02-02.png') repeat-y, #373738;
  }
  .left-nav {
    height: 100%;
