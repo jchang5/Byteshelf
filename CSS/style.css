@@ -127,6 +127,7 @@ header .hero p {
 header .hero img {
   display: block;
   margin:3em auto 0;
+  width:50%;
 }
 /* BUTTONS */
 .btn {
@@ -399,7 +400,7 @@ header .hero img {
    text-decoration: none;
  }
  footer .right-footer-block {
-   background-color:#515151;
+   background-color:#373738;
    height: 50px;
    float: right;
    margin: 0;
@@ -420,7 +421,7 @@ header .hero img {
      display: block;
    }
    footer .right-footer-block {
-     background-color: #515151;
+     background-color: #373738;
      padding:0;
    }
    footer .site-logo {
@@ -448,7 +449,7 @@ header .hero img {
      position: relative;
    }
    footer .right-footer-block {
-     background-color: #515151;
+     background-color: #373738;
    }
    footer .site-logo {
      padding: 0.35em 0.5em;
@@ -587,11 +588,12 @@ text-decoration: none;
 
 #navlist li a:link { color: #6724D0; }
 /*#navlist li a:visited { color: #667; }*/
-  #navlist li a#current
+#navlist li #current
 {
-background: #29292A;
-border-bottom: 1px solid white;
-color:#6724D0;
+background:#fff;
+border: 1.5px solid #6724D0;
+color:#29292A;
+padding-bottom:0;
 }
   .left-nav .items ul li a i {
     width:16px;
@@ -661,7 +663,7 @@ color:#6724D0;
  .item-box {
    display:block;
    height:230px;
-   background: #FFFFFF;
+   background: #EEE;
    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.40);
    position: relative;
    overflow: hidden;
@@ -681,9 +683,6 @@ color:#6724D0;
       float:left;
       display:block;
     }
-    .left-nav .items .all a{
-      background-color:#00D0DB;
-    }
   }
   /* Tablets */
  @media (min-width:768px) {
@@ -701,17 +700,17 @@ color:#6724D0;
      margin:0 1% 25px;
    }
    .left-nav .site-logo img{
-     max-width:95%;
+     max-width:90%;
    }
-   .left-nav .items .all a{
-     background-color:#00D0DB;
+   .left-nav {
+     width:280px;
    }
  }
  /* Laptops and Desktops */
  @media (min-width:992px) {
    .left-nav {
      height: 100vh;
-     width:14.66666667%;
+     width:auto;
      color:#29292A;
      background: #F8F8F8;
      float:left;
@@ -746,9 +745,6 @@ color:#6724D0;
      width:23%;
      margin:0 1% 25px;
    }
- }
- .left-nav .items .all a{
-   background-color:#00D0DB;
  }
  .item-box > img {
   position:absolute;
