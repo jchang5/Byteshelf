@@ -496,7 +496,7 @@ header .hero img {
 /* DASHBOARD */
 .dashboard {
    background:#373738;
-   background: url('../images/101 background-02-02.png') repeat-y, #373738;
+   background: url('../images/101 background-02-02.png') repeat #373738;
  }
  .left-nav {
    height: 100%;
@@ -585,9 +585,6 @@ margin-left: 3px;
 border-bottom: none;
 text-decoration: none;
 }
-
-#navlist li a:link { color: #6724D0; }
-/*#navlist li a:visited { color: #667; }*/
 #navlist li #current
 {
 background:#fff;
